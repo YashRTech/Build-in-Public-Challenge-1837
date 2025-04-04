@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Event Delegation - Preodic Table</h1>
+
+    <!--! Elements container  -->
+    <section class="parent"></section>
+
+
+
+
+    <script>
+      // Function to create a periodic table element
+      const createPeriodicElement = (symbol, atomicNumber, name) => {
+        const element = document.createElement("div");
+        element.classList.add("element");
+        element.innerHTML = symbol;
+
+        // we can set any custom attribute using data- prefix
+        element.setAttribute("data-atomic-number", atomicNumber);
+        element.setAttribute("data-element-name", name);
+
+        return element;
+      };
+
+      // Event handler for periodic table element click
+      const handleElementClick = (event) => {
+        const target = event.target;
+
+        if (target.classList.contains("element")) {
+          const atomicNumber = target.getAttribute("data-atomic-number");
+          const elementName = target.getAttribute("data-element-name");
+          alert(`Atomic Number: ${atomicNumber}\nElement Name: ${elementName}`);
+        }
+      };
+
+      // Function to initialize the periodic table
+      function initializePeriodicTable() {
+        const parent = document.querySelector(".parent");
+
+        // Create 50 periodic table elements
+        for (let i = 1; i <= 50; i++) {
+          const element = createPeriodicElement(`Elem${i}`, i, `Element ${i}`);
+          parent.append(element);
+        }
+
+        // Added event listener to the parent
+        parent.addEventListener("click", handleElementClick);
+      }
+
+      // Initialize the periodic table
+      initializePeriodicTable();
+    </script>
+  </body>
+</html>
