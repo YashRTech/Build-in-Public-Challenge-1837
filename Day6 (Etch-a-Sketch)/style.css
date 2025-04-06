@@ -1,0 +1,28 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(27, 27, 27);
+    color: aliceblue;
+}
+
+h1{
+    text-align: center;
+    margin-top:1rem ;
+}
+.container{
+    background-color: white;
+    height: 550px;
+    width: 550px;
+    margin: auto;
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.boxes{
+    border: 1px solid black;
+}
