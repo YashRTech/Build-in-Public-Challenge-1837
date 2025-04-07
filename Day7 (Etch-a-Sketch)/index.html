@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch - Interactive Pixel Drawing App</title>
+    <meta name="description"
+        content="Create pixel art easily using this interactive Etch-a-Sketch app. Draw with color, rainbow, or eraser modes and customize your grid!">
+    <meta name="keywords"
+        content="etch-a-sketch, pixel art, drawing app, interactive canvas, sketch grid, javascript drawing">
+    <meta name="author" content="Yash Tiwari">
+    <meta property="og:title" content="Etch-a-Sketch - Interactive Drawing App">
+    <meta property="og:description"
+        content="A fun and interactive Etch-a-Sketch tool to create colorful pixel art. Try it now!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/siteImage.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Etch-a-Sketch
+        </h1>
+    </header>
+    <main class="grid">
+        <section class="flex">
+
+            <input type="color" class="chooseColor" id="Colors">
+            <label for="Colors">
+                <button class="colorMode">
+                    Color Mode
+                </button></label>
+            <button class="rainbowBtn">
+                Rainbow Mode
+            </button>
+            <button class="toggleLines">
+                Toggle Lines
+            </button>
+            <button class="eraser">
+                Eraser
+            </button>
+            <button class="clearBtn">
+                Clear
+            </button>
+            <button class="resetBtn">
+                Reset Grid
+            </button>
+        </section>
+
+        <section class="container"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yash Tiwari. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
