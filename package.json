@@ -1,0 +1,24 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "generate": "plop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YashRTech/Build-in-Public-Challenge-1837.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YashRTech/Build-in-Public-Challenge-1837/issues"
+  },
+  "homepage": "https://github.com/YashRTech/Build-in-Public-Challenge-1837#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
